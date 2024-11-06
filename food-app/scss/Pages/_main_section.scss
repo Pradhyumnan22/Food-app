@@ -1,0 +1,83 @@
+.main-section {
+  .item {
+    cursor: pointer;
+    .overlay {
+      h3 {
+        color: $dark;
+        font-weight: $fw-600;
+        font-size: 2rem;
+      }
+      p {
+        color: $dark-alt;
+        font-weight: $fw-500;
+        line-height: 1.2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    &:hover {
+      .overlay {
+        bottom: 0;
+      }
+    }
+
+    &.area-item {
+      background-color: #1d1d1d;
+      span {
+        color: $yellow;
+        opacity: 0.5;
+      }
+      &:hover {
+        span {
+          opacity: 1;
+        }
+      }
+    }
+
+    &.ing-item {
+      h3 {
+        color: $title-color;
+      }
+      p {
+        font-weight: 300;
+      }
+      span {
+        color: $yellow;
+        opacity: 0.5;
+      }
+      &:hover {
+        span {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .meal-details {
+    h1 {
+      letter-spacing: 1px;
+    }
+    h3 {
+      color: $title-color;
+    }
+    button a {
+      color: $light;
+    }
+    .recipes,
+    .tags {
+      span:not(.semicolon) {
+        background-color: #636363;
+        color: $light;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.5rem;
+        height: fit-content;
+      }
+    }
+    .tags {
+      span {
+        background-color: $dark-alt !important;
+        color: $title-color !important;
+      }
+    }
+  }
+}
